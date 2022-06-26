@@ -27,11 +27,22 @@ if __name__ == '__main__':
 
     # Alumno: Graficar la función utilizando "scatter"
     # utilizando "x" e "y" ya disponible
+    fig = plt.figure()
+    fig.suptitle('Ejercicio_3 Tangente Hiperbólica', fontsize=16)
+    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
+    ax2 = fig.add_subplot(1, 2, 2)  # 1 fila, 2 columnas, axes nº2
 
     # Colocar la leyenda y el label con el nombre de la función
 
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    ax1.plot(x, y, c='darkgreen')
+    ax1.legend()
+    ax1.grid()
 
+    ax2.scatter(x, y, c='darkred')
+    ax2.legend()
+    ax2.grid()
+    plt.show()
     print("terminamos")
